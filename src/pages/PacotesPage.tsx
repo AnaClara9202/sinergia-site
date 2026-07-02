@@ -57,9 +57,6 @@ export default function PacotesPage() {
               <p className="mt-2 text-sm text-primary-muted dark:text-primary-pale/70">
                 Indicado para microempresas e pequenos negócios que estão começando.
               </p>
-              <p className="mt-5 font-heading text-4xl font-extrabold text-primary-deep dark:text-white">
-                R$ 410<span className="text-base font-medium text-primary-muted">/mês</span>
-              </p>
               <ul className="mt-6 space-y-3 flex-1">
                 {BASICO_FEATURES.map((f) => (
                   <li key={f} className="flex items-start gap-2.5 text-sm text-primary-deep dark:text-primary-pale/80">
@@ -90,9 +87,6 @@ export default function PacotesPage() {
                 <h2 className="mt-4 font-heading text-2xl font-extrabold">Pacote Estratégico</h2>
                 <p className="mt-2 text-sm text-white/85">
                   Indicado para pequenas e médias empresas. Inclui todos os recursos do Básico, além de IA e vistoria presencial.
-                </p>
-                <p className="mt-5 font-heading text-4xl font-extrabold">
-                  ~R$ 1.775<span className="text-base font-medium text-white/70">/mês</span>
                 </p>
                 <ul className="mt-6 space-y-3 flex-1">
                   {ESTRATEGICO_FEATURES.map((f) => (
