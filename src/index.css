@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    @apply bg-offwhite text-primary-dark antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', sans-serif;
+  }
+  .dark body {
+    @apply bg-[#080E18] text-primary-pale;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-6 py-3 font-semibold text-white transition-all duration-[350ms] ease-sinergia hover:bg-white hover:text-primary hover:border hover:border-primary;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl border border-primary bg-transparent px-6 py-3 font-semibold text-primary transition-all duration-[350ms] ease-sinergia hover:bg-primary hover:text-white;
+  }
+  .btn-invert-dark {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-white px-6 py-3 font-semibold text-primary transition-all duration-[350ms] ease-sinergia hover:bg-primary hover:text-white;
+  }
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-primary-muted bg-clip-text text-transparent;
+  }
+  .glass-card {
+    @apply bg-white/90 backdrop-blur-md rounded-2xl border border-primary-pale shadow-xl;
+  }
+  .dark .glass-card {
+    @apply bg-[#101D30]/90 border-white/10;
+  }
+}
